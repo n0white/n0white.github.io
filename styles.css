@@ -4,10 +4,19 @@
     box-sizing: border-box;
 }
 
+#animatedbg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
 body {
     font-family: "Google Sans", sans-serif;
     margin: 1rem 2.5rem;
-    background-color: black;
+    background-color: rgb(7, 0, 28);
 }
 
 .main-header {
@@ -25,17 +34,25 @@ body {
 }
 
 .brand {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: aliceblue;
     font-weight: bold;
     text-decoration: none;
+    transition: 0.3s;
 }
+
 
 .main-nav_item a {
     font-size: 1.4rem;
     color: aliceblue;
     margin-left: 40px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-nav_item a:hover {
+    padding: 5px;
+    border-bottom: 4px solid white;
 }
 
 .bite-on-money {
@@ -56,4 +73,21 @@ body {
     font-weight: bold;
     color: aliceblue;
     text-decoration: none;
+    animation: animate 3s linear infinite;
+    transition: 0.3s;
+}
+
+.bite-on-money__link:hover {
+    border-bottom: 7px solid white;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0%, 18%, 22%, 34%, 44%, 56%, 67%, 78%, 90% {
+        color: rgb(182, 202, 253);
+    }
+
+    18%, 22%, 34%, 45%, 56%, 65%, 73%, 84%, 100% {
+        color: aliceblue;
+    }
 }
