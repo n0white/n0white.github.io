@@ -78,7 +78,7 @@ body {
 }
 
 .bite-on-money__link:hover {
-    border-bottom: 7px solid white;
+    border-bottom: 7px solid rgb(182, 202, 253);
 }
 
 @keyframes animate {
