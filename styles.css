@@ -1,9 +1,13 @@
+@import url("font/stylesheet.css");
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 1rem;
+    font-family: "Google Sans", sans-serif;
+    margin: 1rem 2.5rem;
+    background-color: black;
 }
 
 .main-header {
@@ -17,13 +21,39 @@ body {
     display: flex;
     padding: 0;
     list-style: none;
+    font-weight: bold;
 }
 
 .brand {
+    font-size: 1.4rem;
+    color: aliceblue;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .main-nav_item a {
+    font-size: 1.4rem;
+    color: aliceblue;
     margin-left: 40px;
+    text-decoration: none;
+}
+
+.bite-on-money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.bite-on-money__text {
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.bite-on-money__link {
+    font-weight: bold;
+    color: aliceblue;
     text-decoration: none;
 }
