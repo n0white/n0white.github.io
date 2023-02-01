@@ -43,6 +43,10 @@ body {
     transition: 0.3s;
 }
 
+.brand span {
+    color: rgb(182, 202, 253);
+}
+
 
 .main-nav_item a {
     font-size: 1.4rem;
