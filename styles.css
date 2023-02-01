@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1rem;
+}
+
+.main-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-nav_items {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.brand {
+    text-decoration: none;
+}
+
+.main-nav_item a {
+    margin-left: 40px;
+    text-decoration: none;
+}
