@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 #animatedbg {
@@ -17,7 +19,7 @@ body {
     font-family: "Google Sans", sans-serif;
     margin: 2rem 3rem;
     background-color: rgb(0, 3, 21);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .main-header {
@@ -49,42 +51,105 @@ body {
 
 
 .main-nav_item a {
+    position: relative;
     font-size: 1.4rem;
     color: aliceblue;
     margin-left: 40px;
     text-decoration: none;
     transition: 0.3s;
+    padding: 0 10px;
 }
 
-.main-nav_item a:hover {
-    padding: 5px;
-    border-bottom: 4px solid white;
+.main-nav_item a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #f0f8ff;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.main-nav_item a:hover::after {
+    width: 100%;
 }
 
 .bite-on-money {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 82vh;
+    align-items: flex-end;
+    height: 50vh;
     font-size: 5rem;
     text-align: center;
 }
 
 .bite-on-money__text {
     font-weight: bold;
-    color: aliceblue;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url("pixel.jpg");
+    background-repeat: repeat-y;
+    
+    animation: reveal-background 4s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal-background {
+    0% {
+        background-size: 0;
+        background-position-x: 0%;
+    }
+
+    /* 10% {
+        background-size: 100px;
+        background-position-x: 0;
+    }
+
+    /* 35%, 45% {
+        background-position-x: 100%;
+    }
+
+    70% {
+        background-size: 100px;
+        background-position-x: 0;
+    } */ 
+
+    100% {
+        background-position-x: 100%;
+        background-size: 1500px;
+    }
+        
 }
 
 .bite-on-money__link {
+    position: relative;
     font-weight: bold;
-    color: aliceblue;
+    color: #f0f8ff;
     text-decoration: none;
     animation: animate 3s linear infinite;
     transition: 0.3s;
 }
 
-.bite-on-money__link:hover {
-    border-bottom: 7px solid rgb(182, 202, 253);
+.bite-on-money__link::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: rgb(182, 202, 253);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+
+.bite-on-money__link:hover::after {
+    width: 100%;
 }
 
 @keyframes animate {
@@ -107,5 +172,48 @@ body {
     }
     .bite-on-money {
         font-size: 2.5rem;
+    }
+}
+
+.scroll-down a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30vh;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    color: #c6d0d8;
+}
+
+.scroll-icon {
+    width: 40px;
+    height: 40px;
+    fill: #c6d0d8;
+    animation: blink 4s infinite;
+}
+
+.scroll-icon2 {
+    position: relative;
+    bottom: 15px;
+    height: 30px;
+    width: 30px;
+    fill: #c6d0d8;
+    animation: blink 4s infinite;
+    
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    /* 50% {
+        opacity: 0.5;
+    } */
+
+    100% {
+        opacity: 1;
     }
 }
