@@ -209,11 +209,13 @@ body {
         opacity: 0;
     }
 
-    /* 50% {
+    50% {
         opacity: 0.5;
-    } */
+        bottom: 15px;
+    }
 
     100% {
         opacity: 1;
+        bottom: 10px;
     }
 }
