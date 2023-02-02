@@ -15,12 +15,14 @@ html {
   margin: 0 auto;
 }
 
+@media (min-height: 1000px) {
+  .container {
+    max-width: 2000px;
+  }
+}
+
 #animatedbg {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   z-index: -1;
 }
 
@@ -258,8 +260,20 @@ body {
   position: absolute;
   margin-top: 13rem;
   align-self: flex-end;
-  width: 50vw;
   z-index: -1;
+  width: 50vw;
+}
+
+@media (min-height: 1000px) {
+  .container {
+    max-width: 2000px;
+  }
+  .about-me p {
+    width: 30vw;
+  }
+  .social-icons {
+    width: 30vw;
+  }
 }
 
 @media (max-width: 1086px) {
