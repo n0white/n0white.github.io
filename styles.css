@@ -15,9 +15,9 @@ html {
   margin: 0 auto;
 }
 
-@media (min-height: 1000px) {
+@media (max-height: 1000px) {
   .container {
-    max-width: 2000px;
+    max-width: 1418px;
   }
 }
 
@@ -269,9 +269,9 @@ body {
 }
 
 @media (min-height: 100px) {
-  .container {
+  /* .container {
     max-width: 2000px;
-  }
+  }  */
   .about-me p {
     width: 40vw;
   }
