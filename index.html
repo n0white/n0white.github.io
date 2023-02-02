@@ -41,7 +41,7 @@
           </p>
         </div>
         <div data-aos="slide-up" data-aos-duration="1000" class="scroll-down">
-          <a
+          <a href="#about"
             >Scroll down
             <svg
               class="scroll-icon"
@@ -109,6 +109,7 @@
         </div>
         <div class="about-me" id="about">
           <h1 data-aos="slide-up">About <span>me</span></h1>
+          <img data-aos="slide-up" class="laylapic" src="layla.png" alt="" />
           <p data-aos="slide-up">
             Hello, I’m Andrew - 20 y.o frontend developer from Ivano - Frankivsk
             (Ukraine). Student of Nafta and Oil University. Here is my socials,
@@ -130,7 +131,6 @@
             </a>
             <a
               data-aos="slide-up"
-              data-aos-delay="50"
               href="https://www.instagram.com/n0white.me"
               target="_blank"
             >
@@ -148,7 +148,6 @@
             </a>
             <a
               data-aos="slide-up"
-              data-aos-delay="100"
               href="https://github.com/n0white"
               target="_blank"
             >
@@ -166,7 +165,6 @@
             </a>
             <a
               data-aos="slide-up"
-              data-aos-delay="150"
               href="https://www.youtube.com/channel/UCtXbccMiDuuMI6UGIkerryA"
               target="_blank"
             >
@@ -183,6 +181,7 @@
               </svg>
             </a>
           </div>
+          <p></p>
         </div>
       </main>
     </div>
@@ -190,7 +189,10 @@
     <script src="custom.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        // offset: 200,
+        duration: 600,
+      });
     </script>
   </body>
 </html>
