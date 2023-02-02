@@ -264,9 +264,9 @@ body {
   width: 50vw;
 }
 
-@media (min-height: 1000px) {
+@media (min-height: 500px) {
   .container {
-    max-width: 2000px;
+    max-width: 1600px;
   }
   .about-me p {
     width: 30vw;
