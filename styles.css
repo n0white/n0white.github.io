@@ -175,6 +175,7 @@ body {
   font-weight: 500;
   text-align: center;
   color: #c6d0d8;
+  text-decoration: none;
 }
 
 .scroll-icon {
@@ -214,6 +215,7 @@ body {
   flex-direction: column;
   font-weight: bold;
   font-size: 2.5rem;
+  font-stretch: normal;
   height: 95vh;
   color: aliceblue;
   padding-top: 8rem;
@@ -238,6 +240,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 3rem;
+  padding-bottom: 1rem;
   width: 50vw;
 }
 
@@ -249,6 +252,31 @@ body {
 
 .social-icon:hover {
   fill: aliceblue;
+}
+
+.laylapic {
+  position: absolute;
+  margin-top: 13rem;
+  align-self: flex-end;
+  width: 50vw;
+  z-index: -1;
+}
+
+@media (max-width: 1086px) {
+  .laylapic {
+    margin-top: 7rem;
+    position: relative;
+    align-self: center;
+  }
+
+  .about-me p {
+    width: 90vw;
+    align-self: center;
+  }
+
+  .social-icons {
+    align-self: center;
+  }
 }
 
 @media (max-width: 40rem) {
@@ -278,11 +306,16 @@ body {
     width: 15px;
   }
 
+  .laylapic {
+    margin-top: 2rem;
+  }
+
   .about-me {
     font-size: 1.4rem;
   }
 
   .about-me p {
+    padding-top: 3rem;
     width: 90vw;
     align-self: center;
   }
@@ -292,6 +325,7 @@ body {
   }
 
   .social-icon {
+    padding: 0;
     margin: 0 0.9rem;
     width: 50px;
     height: 50px;
