@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="heart.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="script.js"></script>
     <title>n0white</title>
   </head>
@@ -106,8 +107,8 @@
         </a>
       </div>
       <div class="about-me" id="about">
-        <h1>About <span>me</span></h1>
-        <p>
+        <h1 data-aos="slide-up">About <span>me</span></h1>
+        <p data-aos="slide-up">
           Hello, I’m Andrew - 20 y.o frontend developer from Ivano - Frankivsk
           (Ukraine). Student of Nafta and Oil University.
         </p>
@@ -115,5 +116,9 @@
     </main>
     <script src="particles.min.js"></script>
     <script src="custom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
