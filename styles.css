@@ -234,6 +234,23 @@ body {
   align-self: flex-start;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  width: 50vw;
+}
+
+.social-icon {
+  width: 80px;
+  height: 80px;
+  fill: rgb(182, 202, 253);
+}
+
+.social-icon:hover {
+  fill: aliceblue;
+}
+
 @media (max-width: 40rem) {
   .brand {
     font-size: 1.2rem;
@@ -268,6 +285,16 @@ body {
   .about-me p {
     width: 90vw;
     align-self: center;
+  }
+
+  .social-icons {
+    align-self: center;
+  }
+
+  .social-icon {
+    margin: 0 0.9rem;
+    width: 50px;
+    height: 50px;
   }
 
   @keyframes reveal-background {
