@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  max-width: 1418px;
+  margin: 0 auto;
+}
+
 #animatedbg {
   position: absolute;
   top: 0;
@@ -30,8 +35,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 1417.22px;
-  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .main-nav_items {
