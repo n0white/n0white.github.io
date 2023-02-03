@@ -3,7 +3,7 @@
 particlesJS("animatedbg", {
   particles: {
     number: {
-      value:555,
+      value: 555,
       density: {
         enable: true,
         value_area: 800,
