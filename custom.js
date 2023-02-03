@@ -3,7 +3,7 @@
 particlesJS("animatedbg", {
   particles: {
     number: {
-      value: 380,
+      value:555,
       density: {
         enable: true,
         value_area: 800,
@@ -56,7 +56,7 @@ particlesJS("animatedbg", {
     },
     move: {
       enable: true,
-      speed: 0.3,
+      speed: 0.8,
       direction: "none",
       random: false,
       straight: false,
@@ -77,7 +77,7 @@ particlesJS("animatedbg", {
         mode: "grab",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,

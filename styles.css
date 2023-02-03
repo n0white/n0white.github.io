@@ -13,15 +13,35 @@ html {
 .container {
   max-width: 1418px;
   margin: 0 auto;
+  margin-bottom: 11rem;
 }
 
-@media (max-height: 1000px) {
+@media (max-width: 1600px) {
   .container {
-    max-width: 1418px;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 880) {
+  .container {
+    max-width: 700px;
   }
 }
 
 #animatedbg {
+  height: 2500px;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,8 +51,8 @@ html {
 }
 
 body {
+  margin: 0 3rem;
   font-family: "Google Sans", sans-serif;
-  margin: 2rem 3rem;
   background-color: rgb(0, 3, 21);
   overflow-x: hidden;
 }
@@ -222,9 +242,8 @@ body {
   font-weight: bold;
   font-size: 2.5rem;
   font-stretch: normal;
-  height: 95vh;
   color: aliceblue;
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 .about-me h1 {
@@ -236,6 +255,7 @@ body {
 }
 
 .about-me p {
+  padding: 10;
   text-align: center;
   padding-top: 7rem;
   width: 50vw;
@@ -266,12 +286,10 @@ body {
   align-self: flex-end;
   z-index: -1;
   width: 50vw;
+  max-width: 960px;
 }
 
 @media (min-height: 100px) {
-  /* .container {
-    max-width: 2000px;
-  }  */
   .about-me p {
     width: 40vw;
   }
