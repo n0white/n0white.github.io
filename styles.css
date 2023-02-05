@@ -246,7 +246,8 @@ body {
   font-weight: bold;
   font-size: 2.5rem;
   color: aliceblue;
-  padding-top: 110px;
+  margin-top: 60px;
+  padding-top: 50px;
 }
 
 .about-me h1 {
@@ -340,14 +341,14 @@ body {
   }
 
   .about-me {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "am am"
       "text text"
       "icons icons"
       "pic pic";
     font-size: 1.4rem;
-    padding-top: 100px;
+    margin-top: 80px;
   }
 
   .about-me p {
