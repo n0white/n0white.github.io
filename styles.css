@@ -237,17 +237,22 @@ body {
 }
 
 .about-me {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-template-areas:
+    "am am"
+    "text pic"
+    "icons pic";
   font-weight: bold;
   font-size: 2.5rem;
-  font-stretch: normal;
   color: aliceblue;
   padding-top: 10rem;
 }
 
 .about-me h1 {
-  align-self: center;
+  grid-area: am;
+
+  justify-self: center;
 }
 
 .about-me h1 span {
@@ -255,19 +260,17 @@ body {
 }
 
 .about-me p {
-  padding: 10;
+  grid-area: text;
   text-align: center;
   padding-top: 7rem;
-  width: 50vw;
   align-self: flex-start;
 }
 
 .social-icons {
+  grid-area: icons;
   display: flex;
   justify-content: space-around;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  width: 50vw;
+  padding-top: 10px;
 }
 
 .social-icon {
@@ -281,21 +284,12 @@ body {
 }
 
 .laylapic {
-  position: absolute;
-  margin-top: 13rem;
-  align-self: flex-end;
+  position: relative;
+  top: 0;
+  grid-area: pic;
+  margin-top: 110px;
   z-index: -1;
-  width: 50vw;
-  max-width: 960px;
-}
-
-@media (min-height: 100px) {
-  .about-me p {
-    width: 40vw;
-  }
-  .social-icons {
-    width: 40vw;
-  }
+  max-width: 100%;
 }
 
 @media (max-width: 1086px) {
@@ -306,7 +300,6 @@ body {
   }
 
   .about-me p {
-    width: 90vw;
     align-self: center;
   }
 
@@ -347,16 +340,23 @@ body {
   }
 
   .about-me {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "am am"
+      "text text"
+      "icons icons"
+      "pic pic";
     font-size: 1.4rem;
+    padding-top: 100px;
   }
 
   .about-me p {
-    padding-top: 3rem;
-    width: 90vw;
+    padding-top: 20px;
     align-self: center;
   }
 
   .social-icons {
+    padding-top: 20px;
     align-self: center;
   }
 
