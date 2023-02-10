@@ -61,14 +61,6 @@ body {
   margin-top: 3rem;
 }
 
-.main-nav_items {
-  display: flex;
-  text-align: end;
-  padding: 0;
-  list-style: none;
-  font-weight: bold;
-}
-
 .brand {
   font-size: 2rem;
   color: map-get($colors, main);
@@ -80,6 +72,14 @@ body {
   @media (max-width: 40rem) {
     font-size: 1.2rem;
   }
+}
+
+.main-nav_items {
+  display: flex;
+  text-align: end;
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
 }
 
 .main-nav_item a {
