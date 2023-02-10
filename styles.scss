@@ -1,7 +1,7 @@
 @import "font/stylesheet.css";
 
 $colors: (
-  highlite: #b6cafd,
+  highlited: #b6cafd,
   main: #f0f8ff,
   darkened: #c6d0d8,
 );
@@ -68,7 +68,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   span {
-    color: map-get($colors, highlite);
+    color: map-get($colors, highlited);
   }
   @media (max-width: 40rem) {
     font-size: 1.2rem;
@@ -173,7 +173,7 @@ body {
     left: 0;
     width: 0;
     height: 6px;
-    background-color: map-get($colors, highlite);
+    background-color: map-get($colors, highlited);
     transition: 0.3s;
     border-radius: 4px;
   }
@@ -198,7 +198,7 @@ body {
     73%,
     84%,
     100% {
-      color: map-get($colors, highlite);
+      color: map-get($colors, highlited);
     }
   }
 }
@@ -277,7 +277,7 @@ body {
     justify-self: center;
   }
   span {
-    color: map-get($colors, highlite);
+    color: map-get($colors, highlited);
   }
   p {
     grid-area: text;
@@ -322,7 +322,7 @@ body {
 .social-icon {
   width: 80px;
   height: 80px;
-  fill: map-get($colors, highlite);
+  fill: map-get($colors, highlited);
   &:hover {
     fill: map-get($colors, main);
   }
