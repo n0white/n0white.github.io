@@ -1,4 +1,5 @@
 @import "font/stylesheet.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,24 +14,20 @@ html {
   max-width: 1418px;
   margin: 0 auto;
   margin-bottom: 11rem;
-}
-@media (max-width: 1600px) {
-  .container {
+
+  @media (max-width: 1600px) {
     max-width: 1200px;
   }
-}
-@media (max-width: 1350px) {
-  .container {
+
+  @media (max-width: 1350px) {
     max-width: 1000px;
   }
-}
-@media (max-width: 1120px) {
-  .container {
+
+  @media (max-width: 1120px) {
     max-width: 800px;
   }
-}
-@media (max-width: 880) {
-  .container {
+
+  @media (max-width: 880) {
     max-width: 700px;
   }
 }
@@ -72,12 +69,10 @@ body {
   color: aliceblue;
   font-weight: bold;
   text-decoration: none;
-}
-.brand span {
-  color: rgb(182, 202, 253);
-}
-@media (max-width: 40rem) {
-  .brand {
+  span {
+    color: rgb(182, 202, 253);
+  }
+  @media (max-width: 40rem) {
     font-size: 1.2rem;
   }
 }
@@ -90,24 +85,22 @@ body {
   text-decoration: none;
   transition: 0.3s;
   padding: 0 10px;
-}
-.main-nav_item a::after {
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background-color: #f0f8ff;
-  transition: 0.3s;
-  border-radius: 4px;
-}
-.main-nav_item a:hover::after {
-  width: 100%;
-}
-@media (max-width: 40rem) {
-  .main-nav_item a {
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #f0f8ff;
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+  @media (max-width: 40rem) {
     font-size: 1rem;
   }
 }
@@ -119,9 +112,7 @@ body {
   height: 50vh;
   font-size: 5rem;
   text-align: center;
-}
-@media (max-width: 40rem) {
-  .bite-on-money {
+  @media (max-width: 40rem) {
     font-size: 2.5rem;
   }
 }
@@ -135,26 +126,28 @@ body {
   background-repeat: repeat-y;
   animation: reveal-background 4s ease;
   animation-fill-mode: forwards;
-}
-@keyframes reveal-background {
-  0% {
-    background-size: 0;
-    background-position-x: 0%;
-  }
-  100% {
-    background-position-x: 100%;
-    background-size: 1500px;
-  }
-}
-@media (max-width: 40rem) {
   @keyframes reveal-background {
     0% {
       background-size: 0;
       background-position-x: 0%;
     }
+
     100% {
       background-position-x: 100%;
-      background-size: 400px;
+      background-size: 1500px;
+    }
+  }
+  @media (max-width: 40rem) {
+    @keyframes reveal-background {
+      0% {
+        background-size: 0;
+        background-position-x: 0%;
+      }
+
+      100% {
+        background-position-x: 100%;
+        background-size: 400px;
+      }
     }
   }
 }
@@ -166,28 +159,41 @@ body {
   text-decoration: none;
   animation: animate 3s linear infinite;
   transition: 0.3s;
-}
-.bite-on-money__link::after {
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 0;
-  height: 6px;
-  background-color: rgb(182, 202, 253);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-.bite-on-money__link:hover::after {
-  width: 100%;
-}
-@keyframes animate {
-  0%, 18%, 22%, 34%, 67%, 78%, 90% {
-    color: rgba(182, 202, 253, 0);
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: rgb(182, 202, 253);
+    transition: 0.3s;
+    border-radius: 4px;
   }
-  18%, 22%, 34%, 45%, 73%, 84%, 100% {
-    color: rgb(182, 202, 253);
+  &:hover::after {
+    width: 100%;
+  }
+  @keyframes animate {
+    0%,
+    18%,
+    22%,
+    34%,
+    67%,
+    78%,
+    90% {
+      color: rgba(182, 202, 253, 0);
+    }
+
+    18%,
+    22%,
+    34%,
+    45%,
+    73%,
+    84%,
+    100% {
+      color: rgb(182, 202, 253);
+    }
   }
 }
 
@@ -202,9 +208,7 @@ body {
   text-align: center;
   color: #c6d0d8;
   text-decoration: none;
-}
-@media (max-width: 40rem) {
-  .scroll-down a {
+  @media (max-width: 40rem) {
     font-size: 1.5rem;
   }
 }
@@ -214,9 +218,7 @@ body {
   height: 40px;
   fill: #c6d0d8;
   animation: blink 4s infinite;
-}
-@media (max-width: 40rem) {
-  .scroll-icon {
+  @media (max-width: 40rem) {
     width: 20px;
     height: 20px;
   }
@@ -229,66 +231,69 @@ body {
   width: 30px;
   fill: #c6d0d8;
   animation: blink 4s infinite;
-}
-@media (max-width: 40rem) {
-  .scroll-icon2 {
+  @media (max-width: 40rem) {
     margin-top: 5px;
     height: 15px;
     width: 15px;
   }
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-    bottom: 15px;
-  }
-  100% {
-    opacity: 1;
-    bottom: 10px;
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.5;
+      bottom: 15px;
+    }
+
+    100% {
+      opacity: 1;
+      bottom: 10px;
+    }
   }
 }
 
 .about-me {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-areas: "am am" "text pic" "icons pic";
+  grid-template-areas:
+    "am am"
+    "text pic"
+    "icons pic";
   font-weight: bold;
   font-size: 2.5rem;
   color: aliceblue;
   margin-top: 60px;
   padding-top: 50px;
-}
-.about-me h1 {
-  grid-area: am;
-  justify-self: center;
-}
-.about-me span {
-  color: rgb(182, 202, 253);
-}
-.about-me p {
-  grid-area: text;
-  text-align: center;
-  padding-top: 7rem;
-  align-self: flex-start;
-}
-@media (max-width: 1086px) {
-  .about-me p {
-    align-self: center;
+  h1 {
+    grid-area: am;
+
+    justify-self: center;
   }
-}
-@media (max-width: 40rem) {
-  .about-me p {
-    padding-top: 20px;
-    align-self: center;
+  span {
+    color: rgb(182, 202, 253);
   }
-}
-@media (max-width: 40rem) {
-  .about-me {
+  p {
+    grid-area: text;
+    text-align: center;
+    padding-top: 7rem;
+    align-self: flex-start;
+
+    @media (max-width: 1086px) {
+      align-self: center;
+    }
+    @media (max-width: 40rem) {
+      padding-top: 20px;
+      align-self: center;
+    }
+  }
+  @media (max-width: 40rem) {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "am am" "text text" "icons icons" "pic pic";
+    grid-template-areas:
+      "am am"
+      "text text"
+      "icons icons"
+      "pic pic";
     font-size: 1.4rem;
     margin-top: 80px;
   }
@@ -299,14 +304,10 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
-}
-@media (max-width: 1086px) {
-  .social-icons {
+  @media (max-width: 1086px) {
     align-self: center;
   }
-}
-@media (max-width: 40rem) {
-  .social-icons {
+  @media (max-width: 40rem) {
     padding-top: 20px;
     align-self: center;
   }
@@ -316,12 +317,10 @@ body {
   width: 80px;
   height: 80px;
   fill: rgb(182, 202, 253);
-}
-.social-icon:hover {
-  fill: aliceblue;
-}
-@media (max-width: 40rem) {
-  .social-icon {
+  &:hover {
+    fill: aliceblue;
+  }
+  @media (max-width: 40rem) {
     padding: 0;
     margin: 0 0.9rem;
     width: 50px;
@@ -336,16 +335,12 @@ body {
   margin-top: 110px;
   z-index: -1;
   max-width: 100%;
-}
-@media (max-width: 1086px) {
-  .laylapic {
+  @media (max-width: 1086px) {
     margin-top: 7rem;
     position: relative;
     align-self: center;
   }
-}
-@media (max-width: 40rem) {
-  .laylapic {
+  @media (max-width: 40rem) {
     margin-top: 2rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
