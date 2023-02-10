@@ -1,5 +1,10 @@
 @import "font/stylesheet.css";
 
+$colors: (
+  highlite: #b6cafd,
+  main: #f0f8ff,
+);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -66,11 +71,11 @@ body {
 
 .brand {
   font-size: 2rem;
-  color: aliceblue;
+  color: map-get($colors, main);
   font-weight: bold;
   text-decoration: none;
   span {
-    color: rgb(182, 202, 253);
+    color: map-get($colors, highlite);
   }
   @media (max-width: 40rem) {
     font-size: 1.2rem;
@@ -80,7 +85,7 @@ body {
 .main-nav_item a {
   position: relative;
   font-size: 1.4rem;
-  color: aliceblue;
+  color: map-get($colors, main);
   margin-left: 20px;
   text-decoration: none;
   transition: 0.3s;
@@ -93,7 +98,7 @@ body {
     left: 0;
     width: 0;
     height: 4px;
-    background-color: #f0f8ff;
+    background-color: map-get($colors, main);
     transition: 0.3s;
     border-radius: 4px;
   }
@@ -155,7 +160,7 @@ body {
 .bite-on-money__link {
   position: relative;
   font-weight: bold;
-  color: #f0f8ff;
+  color: map-get($colors, main);
   text-decoration: none;
   animation: animate 3s linear infinite;
   transition: 0.3s;
@@ -167,7 +172,7 @@ body {
     left: 0;
     width: 0;
     height: 6px;
-    background-color: rgb(182, 202, 253);
+    background-color: map-get($colors, highlite);
     transition: 0.3s;
     border-radius: 4px;
   }
@@ -192,7 +197,7 @@ body {
     73%,
     84%,
     100% {
-      color: rgb(182, 202, 253);
+      color: map-get($colors, highlite);
     }
   }
 }
@@ -262,7 +267,7 @@ body {
     "icons pic";
   font-weight: bold;
   font-size: 2.5rem;
-  color: aliceblue;
+  color: map-get($colors, main);
   margin-top: 60px;
   padding-top: 50px;
   h1 {
@@ -271,7 +276,7 @@ body {
     justify-self: center;
   }
   span {
-    color: rgb(182, 202, 253);
+    color: map-get($colors, highlite);
   }
   p {
     grid-area: text;
@@ -316,9 +321,9 @@ body {
 .social-icon {
   width: 80px;
   height: 80px;
-  fill: rgb(182, 202, 253);
+  fill: map-get($colors, highlite);
   &:hover {
-    fill: aliceblue;
+    fill: map-get($colors, main);
   }
   @media (max-width: 40rem) {
     padding: 0;

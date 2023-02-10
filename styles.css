@@ -69,12 +69,12 @@ body {
 
 .brand {
   font-size: 2rem;
-  color: aliceblue;
+  color: #f0f8ff;
   font-weight: bold;
   text-decoration: none;
 }
 .brand span {
-  color: rgb(182, 202, 253);
+  color: #b6cafd;
 }
 @media (max-width: 40rem) {
   .brand {
@@ -85,7 +85,7 @@ body {
 .main-nav_item a {
   position: relative;
   font-size: 1.4rem;
-  color: aliceblue;
+  color: #f0f8ff;
   margin-left: 20px;
   text-decoration: none;
   transition: 0.3s;
@@ -175,7 +175,7 @@ body {
   left: 0;
   width: 0;
   height: 6px;
-  background-color: rgb(182, 202, 253);
+  background-color: #b6cafd;
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -187,7 +187,7 @@ body {
     color: rgba(182, 202, 253, 0);
   }
   18%, 22%, 34%, 45%, 73%, 84%, 100% {
-    color: rgb(182, 202, 253);
+    color: #b6cafd;
   }
 }
 
@@ -257,7 +257,7 @@ body {
   grid-template-areas: "am am" "text pic" "icons pic";
   font-weight: bold;
   font-size: 2.5rem;
-  color: aliceblue;
+  color: #f0f8ff;
   margin-top: 60px;
   padding-top: 50px;
 }
@@ -266,7 +266,7 @@ body {
   justify-self: center;
 }
 .about-me span {
-  color: rgb(182, 202, 253);
+  color: #b6cafd;
 }
 .about-me p {
   grid-area: text;
@@ -315,10 +315,10 @@ body {
 .social-icon {
   width: 80px;
   height: 80px;
-  fill: rgb(182, 202, 253);
+  fill: #b6cafd;
 }
 .social-icon:hover {
-  fill: aliceblue;
+  fill: #f0f8ff;
 }
 @media (max-width: 40rem) {
   .social-icon {
