@@ -215,7 +215,7 @@ body {
 }
 @media (max-width: 40rem) {
   .scroll-down a {
-    margin-top: 70px;
+    margin-top: 50px;
     font-size: 1.5rem;
     justify-content: center;
   }
