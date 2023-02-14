@@ -209,6 +209,7 @@ body {
 
 .scroll-down {
   height: 46vh;
+
 }
 
 .scroll-down a {
@@ -224,6 +225,7 @@ body {
   text-decoration: none;
   @media (max-width: 40rem) {
     font-size: 1.5rem;
+    justify-content: center;
   }
 }
 
