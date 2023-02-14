@@ -44,7 +44,7 @@ html {
   bottom: 0;
   z-index: -1;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   #animatedbg {
     height: 1700px;
   }
@@ -74,7 +74,7 @@ body {
 .brand span {
   color: #b6cafd;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .brand {
     font-size: 1.2rem;
   }
@@ -112,7 +112,7 @@ body {
 .main-nav_item a:hover::after {
   width: 100%;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .main-nav_item a {
     font-size: 1rem;
   }
@@ -126,7 +126,7 @@ body {
   font-size: 5rem;
   text-align: center;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .bite-on-money {
     font-size: 2.5rem;
   }
@@ -208,16 +208,21 @@ body {
   align-items: center;
   height: 30vh;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 768;
   text-align: center;
   color: #c6d0d8;
   text-decoration: none;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .scroll-down a {
     margin-top: 50px;
     font-size: 1.5rem;
     justify-content: center;
+  }
+}
+@media (max-height: 420px) and (orientation: landscape) {
+  .scroll-down a {
+    justify-content: flex-start;
   }
 }
 
@@ -227,7 +232,7 @@ body {
   fill: #c6d0d8;
   animation: blink 4s infinite;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .scroll-icon {
     width: 20px;
     height: 20px;
@@ -242,7 +247,7 @@ body {
   fill: #c6d0d8;
   animation: blink 4s infinite;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .scroll-icon2 {
     margin-top: 5px;
     height: 15px;
@@ -291,13 +296,13 @@ body {
     align-self: center;
   }
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .about-me p {
     padding-top: 20px;
     align-self: center;
   }
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .about-me {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "am am" "text text" "icons icons" "pic pic";
@@ -317,7 +322,7 @@ body {
     align-self: center;
   }
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .social-icons {
     padding-top: 20px;
     align-self: center;
@@ -332,7 +337,7 @@ body {
 .social-icon:hover {
   fill: #f0f8ff;
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .social-icon {
     padding: 0;
     margin: 0 0.9rem;
@@ -356,7 +361,7 @@ body {
     align-self: center;
   }
 }
-@media (max-width: 40rem) or (max-height: 500px) {
+@media (max-width: 770px) or (max-height: 768px) {
   .laylapic {
     margin-top: 2rem;
   }
