@@ -44,7 +44,7 @@ html {
   bottom: 0;
   z-index: -1;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   #animatedbg {
     height: 1700px;
   }
@@ -74,7 +74,7 @@ body {
 .brand span {
   color: #b6cafd;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .brand {
     font-size: 1.2rem;
   }
@@ -112,7 +112,7 @@ body {
 .main-nav_item a:hover::after {
   width: 100%;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .main-nav_item a {
     font-size: 1rem;
   }
@@ -126,7 +126,7 @@ body {
   font-size: 5rem;
   text-align: center;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .bite-on-money {
     font-size: 2.5rem;
   }
@@ -213,7 +213,7 @@ body {
   color: #c6d0d8;
   text-decoration: none;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .scroll-down a {
     margin-top: 50px;
     font-size: 1.5rem;
@@ -227,7 +227,7 @@ body {
   fill: #c6d0d8;
   animation: blink 4s infinite;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .scroll-icon {
     width: 20px;
     height: 20px;
@@ -242,7 +242,7 @@ body {
   fill: #c6d0d8;
   animation: blink 4s infinite;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .scroll-icon2 {
     margin-top: 5px;
     height: 15px;
@@ -291,13 +291,13 @@ body {
     align-self: center;
   }
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .about-me p {
     padding-top: 20px;
     align-self: center;
   }
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .about-me {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "am am" "text text" "icons icons" "pic pic";
@@ -317,7 +317,7 @@ body {
     align-self: center;
   }
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .social-icons {
     padding-top: 20px;
     align-self: center;
@@ -332,7 +332,7 @@ body {
 .social-icon:hover {
   fill: #f0f8ff;
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .social-icon {
     padding: 0;
     margin: 0 0.9rem;
@@ -356,7 +356,7 @@ body {
     align-self: center;
   }
 }
-@media (max-width: 40rem) {
+@media (max-width: 40rem) or (max-height: 500px) {
   .laylapic {
     margin-top: 2rem;
   }
