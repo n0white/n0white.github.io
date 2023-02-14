@@ -39,13 +39,16 @@ html {
 }
 
 #animatedbg {
-  height: 1800px;
+  height: 2600px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
+  @media (max-width: 40rem) {
+    height: 1700px;
+  }
 }
 
 body {
@@ -60,6 +63,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  height: 4vh;
 }
 
 .brand {
@@ -201,6 +205,10 @@ body {
       color: map-get($colors, highlited);
     }
   }
+}
+
+.scroll-down {
+  height: 46vh;
 }
 
 .scroll-down a {
