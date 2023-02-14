@@ -224,7 +224,7 @@ body {
   color: map-get($colors, darkened);
   text-decoration: none;
   @media (max-width: 40rem) {
-    margin-top: 70px;
+    margin-top: 50px;
     font-size: 1.5rem;
     justify-content: center;
   }
