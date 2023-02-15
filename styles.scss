@@ -125,6 +125,9 @@ body {
   @media (max-width: 770px), (max-height: 770px) {
     font-size: 2.5rem;
   }
+  @media (max-width: 770px) {
+    padding-bottom: 70px;
+  }
 }
 
 .bite-on-money__text {
