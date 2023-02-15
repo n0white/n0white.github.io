@@ -46,7 +46,7 @@ html {
   right: 0;
   bottom: 0;
   z-index: -1;
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px) {
     height: 1700px;
   }
 }
@@ -74,7 +74,7 @@ body {
   span {
     color: map-get($colors, highlited);
   }
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     font-size: 1.2rem;
   }
 }
@@ -110,7 +110,7 @@ body {
   &:hover::after {
     width: 100%;
   }
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     font-size: 1rem;
   }
 }
@@ -122,7 +122,7 @@ body {
   height: 50vh;
   font-size: 5rem;
   text-align: center;
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     font-size: 2.5rem;
   }
 }
@@ -222,7 +222,7 @@ body {
   text-align: center;
   color: map-get($colors, darkened);
   text-decoration: none;
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     margin-top: 50px;
     font-size: 1.5rem;
     justify-content: center;
@@ -237,7 +237,7 @@ body {
   height: 40px;
   fill: map-get($colors, darkened);
   animation: blink 4s infinite;
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     width: 20px;
     height: 20px;
   }
@@ -250,7 +250,7 @@ body {
   width: 30px;
   fill: map-get($colors, darkened);
   animation: blink 4s infinite;
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     margin-top: 5px;
     height: 15px;
     width: 15px;
@@ -301,12 +301,12 @@ body {
     @media (max-width: 1086px) {
       align-self: center;
     }
-    @media (max-width: 770px) or (max-height: 768px) {
+    @media (max-width: 770px), (max-height: 770px) {
       padding-top: 20px;
       align-self: center;
     }
   }
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "am am"
@@ -326,7 +326,7 @@ body {
   @media (max-width: 1086px) {
     align-self: center;
   }
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     padding-top: 20px;
     align-self: center;
   }
@@ -339,7 +339,7 @@ body {
   &:hover {
     fill: map-get($colors, main);
   }
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     padding: 0;
     margin: 0 0.9rem;
     width: 50px;
@@ -359,7 +359,7 @@ body {
     position: relative;
     align-self: center;
   }
-  @media (max-width: 770px) or (max-height: 768px) {
+  @media (max-width: 770px), (max-height: 770px) {
     margin-top: 2rem;
   }
 }
