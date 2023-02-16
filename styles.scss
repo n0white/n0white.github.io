@@ -39,14 +39,14 @@ html {
 }
 
 #animatedbg {
-  height: 2600px;
+  height: 2400px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: -1;
-  @media (max-width: 770px) {
+  @media (max-width: 770px), (max-height: 770px) {
     height: 1700px;
   }
 }
@@ -347,6 +347,10 @@ body {
   }
 }
 
+#laylasound {
+  grid-area: pic;
+}
+
 .laylapic {
   position: relative;
   top: 0;
@@ -354,6 +358,7 @@ body {
   margin-top: 110px;
   z-index: -1;
   max-width: 100%;
+
   @media (max-width: 1086px) {
     margin-top: 7rem;
     position: relative;

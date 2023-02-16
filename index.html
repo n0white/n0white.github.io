@@ -172,12 +172,23 @@
               </svg>
             </a>
           </div>
-          <img class="laylapic" src="/pics/layla.webp" alt="" />
+          <audio id="audio" src="/yametekudasaicat.mp3"></audio>
+          <a href="#aboutme" id="laylasound">
+            <img class="laylapic" src="/pics/layla.webp" alt="" />
+          </a>
         </div>
       </main>
     </div>
     <script src="particles.min.js"></script>
     <script src="custom.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      document
+        .getElementById("laylasound")
+        .addEventListener("click", function () {
+          document.getElementById("audio").play();
+        });
+    </script>
   </body>
 </html>
