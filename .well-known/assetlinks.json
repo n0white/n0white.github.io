@@ -7,7 +7,8 @@
             "namespace": "android_app",
             "package_name": "com.n0white.n0widgets",
             "sha256_cert_fingerprints": [
-                "B8:80:68:FB:5F:CC:E5:AC:5F:21:F1:73:6B:97:99:49:54:AE:04:54:BC:09:51:03:F2:59:28:7C:84:CC:49:AF"
+                "B8:80:68:FB:5F:CC:E5:AC:5F:21:F1:73:6B:97:99:49:54:AE:04:54:BC:09:51:03:F2:59:28:7C:84:CC:49:AF",
+                "84:82:7E:50:EC:44:E9:F9:99:7C:7E:F6:2C:47:05:C0:92:C1:8A:B1:27:CD:53:68:C8:DE:26:D3:E9:57:F6:25"
             ]
         }
     }
