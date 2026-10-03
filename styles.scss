@@ -46,7 +46,9 @@ html {
   right: 0;
   bottom: 0;
   z-index: -1;
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     height: 1700px;
   }
 }
@@ -71,10 +73,13 @@ body {
   color: map-get($colors, main);
   font-weight: bold;
   text-decoration: none;
+
   span {
     color: map-get($colors, highlited);
   }
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     font-size: 1.2rem;
   }
 }
@@ -95,6 +100,7 @@ body {
   text-decoration: none;
   transition: 0.3s;
   padding: 0 10px;
+
   &::after {
     display: block;
     content: "";
@@ -107,22 +113,28 @@ body {
     transition: 0.3s;
     border-radius: 4px;
   }
+
   &:hover::after {
     width: 100%;
   }
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     font-size: 1rem;
   }
 }
 
 .bite-on-money {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   height: 50vh;
   font-size: 5rem;
   text-align: center;
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     font-size: 2.5rem;
   }
 }
@@ -136,6 +148,7 @@ body {
   background-repeat: repeat-y;
   animation: reveal-background 4s ease;
   animation-fill-mode: forwards;
+
   @keyframes reveal-background {
     0% {
       background-size: 0;
@@ -147,6 +160,7 @@ body {
       background-size: 1500px;
     }
   }
+
   @media (max-width: 440px) {
     @keyframes reveal-background {
       0% {
@@ -169,6 +183,7 @@ body {
   text-decoration: none;
   animation: animate 3s linear infinite;
   transition: 0.3s;
+
   &::after {
     display: block;
     content: "";
@@ -181,10 +196,13 @@ body {
     transition: 0.3s;
     border-radius: 4px;
   }
+
   &:hover::after {
     width: 100%;
   }
+
   @keyframes animate {
+
     0%,
     18%,
     22%,
@@ -207,6 +225,46 @@ body {
   }
 }
 
+.bite-on-money__policy {
+  position: relative;
+  display: inline-block;
+  font-size: 1.15rem;
+  color: map-get($colors, highlited);
+  text-decoration: none;
+  margin-top: 1.25rem;
+  letter-spacing: 0.5px;
+  opacity: 0.75;
+  transition: opacity 0.3s ease, color 0.3s ease;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: map-get($colors, main);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: map-get($colors, main);
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
+    font-size: 0.95rem;
+    margin-top: 0.85rem;
+  }
+}
+
 .scroll-down {
   height: 46vh;
 }
@@ -222,11 +280,14 @@ body {
   text-align: center;
   color: map-get($colors, darkened);
   text-decoration: none;
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     margin-top: 50px;
     font-size: 1.5rem;
     justify-content: center;
   }
+
   @media (max-height: 420px) and (orientation: landscape) {
     justify-content: flex-start;
   }
@@ -237,7 +298,9 @@ body {
   height: 40px;
   fill: map-get($colors, darkened);
   animation: blink 4s infinite;
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     width: 20px;
     height: 20px;
   }
@@ -250,11 +313,14 @@ body {
   width: 30px;
   fill: map-get($colors, darkened);
   animation: blink 4s infinite;
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     margin-top: 5px;
     height: 15px;
     width: 15px;
   }
+
   @keyframes blink {
     0% {
       opacity: 0;
@@ -284,14 +350,17 @@ body {
   color: map-get($colors, main);
   margin-top: 60px;
   padding-top: 50px;
+
   h1 {
     grid-area: am;
 
     justify-self: center;
   }
+
   span {
     color: map-get($colors, highlited);
   }
+
   p {
     grid-area: text;
     text-align: center;
@@ -301,12 +370,16 @@ body {
     @media (max-width: 1086px) {
       align-self: center;
     }
-    @media (max-width: 770px), (max-height: 770px) {
+
+    @media (max-width: 770px),
+    (max-height: 770px) {
       padding-top: 20px;
       align-self: center;
     }
   }
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "am am"
@@ -323,10 +396,13 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
+
   @media (max-width: 1086px) {
     align-self: center;
   }
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     padding-top: 20px;
     align-self: center;
   }
@@ -336,10 +412,13 @@ body {
   width: 80px;
   height: 80px;
   fill: map-get($colors, highlited);
+
   &:hover {
     fill: map-get($colors, main);
   }
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     padding: 0;
     margin: 0 0.9rem;
     width: 50px;
@@ -364,7 +443,9 @@ body {
     position: relative;
     align-self: center;
   }
-  @media (max-width: 770px), (max-height: 770px) {
+
+  @media (max-width: 770px),
+  (max-height: 770px) {
     margin-top: 2rem;
   }
 }
